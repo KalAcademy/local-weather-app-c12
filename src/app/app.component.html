@@ -1,16 +1,13 @@
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <div class="spacer"></div>
-  <span>Welcome to my weather app!</span>
-    <div class="spacer"></div>
-</div>
-
 <div class="content" role="main">
-  <div class="card highlight-card">
+  <mat-toolbar color="primary">
     Localcast Weather
-  </div>
+  </mat-toolbar>
   <p>Your city, your forecast, right now!</p>
-  <div class="card-container">
-    <app-current-weather></app-current-weather>
+  <div>
+    <app-citysearch></app-citysearch>
   </div>
+  <mat-card>
+    <app-current-weather></app-current-weather>
+  </mat-card>
 </div>
